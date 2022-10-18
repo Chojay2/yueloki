@@ -1,0 +1,38 @@
+<div>
+  <div class="w-100 bg-secondary">
+    <div class="col-12 col-md-9 py-8 py-md-16 mx-auto text-primary d-flex flex-column flex-md-row align-items-center justify-content-center br-b-primary">
+      <p><fa-icon [icon]="faLocationDot" class="me-10"></fa-icon>Gangtey Phobjikha, Punakha, Bhutan</p>
+      <p class="ms-0 ms-md-30"><fa-icon [icon]="faPhone" class="me-10"></fa-icon>+975 17716523</p>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg py-30 px-0 px-md-50 col-12 box-shadow--primary">
+    <a class="navbar-brand ms-16 ms-md-0" href="#">
+      Brand
+    </a>
+    <button class="navbar-toggler me-16 me-md-0" type="button"
+            (click)="toggleNavbar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse me-16 me-md-0"
+         [ngClass]="{ 'show': navbarOpen }">
+      <ul class="navbar-nav text-primary">
+        <li class="nav-item px-10">
+          <a class="nav-link px-10 py-14" href="#">Home</a>
+        </li>
+        <li class="nav-item px-10">
+          <a class="nav-link px-10 py-14" href="#">About Us</a>
+        </li>
+        <li class="nav-item px-10">
+          <a class="nav-link px-10 py-14" href="#">Events</a>
+        </li>
+        <li class="nav-item px-10">
+          <a class="nav-link px-10 py-14" href="#">Accomodations</a>
+        </li>
+        <li class="nav-item px-10">
+          <a class="nav-link px-10 py-14" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+</div>

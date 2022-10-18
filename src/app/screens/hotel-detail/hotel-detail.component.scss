@@ -14,3 +14,20 @@ ngb-rating {
 .form__container {
   height: auto !important;
 }
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ebebeb;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgb(66, 78, 63)
+}
