@@ -1,0 +1,16 @@
+//@import "../../../assets/stylesheets/breakpoint.tsx";
+
+ngb-rating {
+  font-size: 24px;
+  color: #FB8603 !important;
+}
+
+.background {
+  @media screen and (max-width: 992px) {
+    height: auto;
+  }
+}
+
+.form__container {
+  height: auto !important;
+}
