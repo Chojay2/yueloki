@@ -1,11 +1,12 @@
 //overwriting bootstrap colors
-$primary: #3F51B5;
-$secondary: #F0F5FF;
+$primary: rgb(66, 78, 63);
+$secondary: #E2E2DC;
 $success: #638A3F;
 $success-300: #759D47;
 $danger: #D8433A;
 $danger-700: #B83931;
 $warning: #F1B22A;
+$yellow: #FB8603;
 $dark: #dee2e6;
 $info: #5AA3ED;
 $violet: #9CA5D6;
@@ -15,7 +16,7 @@ $white: rgb(255, 255, 255);
 $black: rgb(0, 0, 0);
 $black-100: #E8E9F2;
 $green: rgb(179, 207, 169);
-$grey: #F5F5F5;
+$grey: #CBCCC5;
 $blue: rgb(63, 81, 181);
 $blue-200: rgba(63, 81, 181, 0.16);
 
@@ -83,6 +84,9 @@ $display-font-sizes: (
 $headings-line-height: 1.5 !default;
 $display-font-weight: 400 !default;
 $display-line-height: $headings-line-height !default;
+$headings-color: $primary !default;
+
+$border-color: $grey !default;
 
 //custom font-weight
 $font-weight-light: 400;
@@ -98,7 +102,7 @@ $font-size-base: 16px !default;
 
 //custom font-size for h-tag
 $h1-font-size: 30px !default;
-$h2-font-size: 26px !default;
+$h2-font-size: 28px !default;
 $h3-font-size: 22px !default;
 $h4-font-size: 18px !default;
 
@@ -121,15 +125,30 @@ $paragraph-margin-bottom: 0;
 $headings-margin-bottom: 0 !default;
 $btn-white-space: nowrap !default;
 
+// scss-docs-start border-variables
+$border-width: 1px !default;
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px
+) !default;
+
+$border-style: solid !default;
+$border-color: $primary !default;
+$border-color-translucent: rgba($primary, .175) !default;
+
 :root {
-  --primary: #3F51B5;
-  --secondary: #F0F5FF;
+  --primary: rgb(66, 78, 63);
+  --secondary: #E2E2DC;
   --success: #638A3F;
   --success-300: #759D47;
   --danger: #D8433A;
   --danger-700: #B83931;
   --dodgerblue: #3F87DE;
   --warning: #F1B22A;
+  --yellow: #FB8603;
   --info: #5AA3ED;
   --violet: #9CA5D6;
   --pink: #EF7098;
@@ -138,7 +157,7 @@ $btn-white-space: nowrap !default;
   --black-10: #E8E9F2;
   --blue: 63, 81, 181;
   --blue-200: 63, 81, 181, 0.16;
-  --grey: #F5F5F5;
+  --grey: #CBCCC5;
   --purple: #8330A4;
   --light-green: #62D68B;
   --light-sky: 98, 214, 139;
