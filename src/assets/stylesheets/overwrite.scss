@@ -8,10 +8,15 @@
 }
 
 .accordion-button {
+  position: static !important;
   font-size: 28px !important;
   font-weight: 500 !important;
   color: $primary !important;
   padding: 0 !important;
+  z-index: 1 !important;
+  &:focus {
+    z-index: 1 !important;
+  }
 }
 
 .accordion-button:focus {
@@ -24,4 +29,44 @@
   &-body {
     padding: 10px 0 !important;
   }
+}
+
+.navbar {
+  width: 100% !important;
+  background-color: #F2F0EC !important;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg {
+    flex-wrap: nowrap;
+    justify-content: space-between !important;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    justify-content: end !important;
+  }
+}
+
+.nav-link {
+  color: $primary !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  &:hover {
+    background-color: $grey !important;
+  }
+}
+
+.navbar-collapse {
+  transition: 0.3s ease-out !important;
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  --bs-navbar-toggler-focus-width: 1px;
+  box-shadow: 1px $primary !important;
 }

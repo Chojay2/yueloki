@@ -8,11 +8,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbRatingModule } from "@ng-bootstrap/ng-bootstrap";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgbAccordionModule } from "@ng-bootstrap/ng-bootstrap";
+import { NavigationComponent } from './components/navigation/navigation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HotelDetailComponent
+    HotelDetailComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,

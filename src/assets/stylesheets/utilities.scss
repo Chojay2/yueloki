@@ -12,6 +12,11 @@
     &--top {
       box-shadow: 0 -1px 0 rgba($primary, 0.12);
     }
+    &--primary {
+      box-shadow: -2px 15px 15px -11px rgba(66,78,63,0.58);
+      -webkit-box-shadow: -2px 15px 15px -11px rgba(66,78,63,0.58);
+      -moz-box-shadow: -2px 15px 15px -11px rgba(66,78,63,0.58);
+    }
   }
 
   .text--black-60 {
@@ -50,6 +55,22 @@
       overflow-x: auto;
     }
   }
+
+.position {
+  &--relative {
+    position: relative;
+  }
+  &--absolute {
+    position: absolute;
+  }
+  &--fixed {
+    position: fixed;
+  }
+  &--sticky {
+    position: sticky !important;
+    top: 0;
+  }
+}
 
 .rounded {
   border-radius: 4px;
