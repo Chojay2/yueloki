@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot, faPhone, faBars } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-navigation',
@@ -9,6 +9,7 @@ import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
 export class NavigationComponent implements OnInit {
   faLocationDot = faLocationDot;
   faPhone = faPhone;
+  faBars = faBars;
 
   navbarOpen = false;
 

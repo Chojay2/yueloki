@@ -78,7 +78,9 @@ $display-font-sizes: (
         34: 34px,
         38: 38px,
         40: 40px,
-        50: 50px
+        50: 50px,
+        70: 70px,
+        100: 100px
 );
 
 $headings-line-height: 1.5 !default;
@@ -93,6 +95,7 @@ $font-weight-light: 400;
 $font-weight-normal: 500;
 $font-weight-semibold: 600;
 $font-weight-bold: 700;
+$font-weight-bolder: 800;
 
 //changing units to px
 $nav-link-padding-y: 8px !default;
