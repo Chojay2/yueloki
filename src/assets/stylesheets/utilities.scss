@@ -13,9 +13,9 @@
       box-shadow: 0 -1px 0 rgba($primary, 0.12);
     }
     &--primary {
-      box-shadow: -2px 15px 15px -11px rgba(66,78,63,0.58);
-      -webkit-box-shadow: -2px 15px 15px -11px rgba(66,78,63,0.58);
-      -moz-box-shadow: -2px 15px 15px -11px rgba(66,78,63,0.58);
+      box-shadow: -3px 10px 11px -10px rgba(66,78,63,0.88);
+      -webkit-box-shadow: -3px 10px 11px -10px rgba(66,78,63,0.88);
+      -moz-box-shadow: -3px 10px 11px -10px rgba(66,78,63,0.88);
     }
   }
 
@@ -73,6 +73,9 @@
   &-xl {
     border-radius: 50px;
   }
+  &-0 {
+    border-radius: 0 !important;
+  }
 }
 
 .text--underline {
@@ -92,19 +95,49 @@
   &-e-grey {
     border-right: 1px solid rgba($black, 0.6);
   }
+  &-primary-12 {
+    border: 12px solid $primary;
+  }
 }
 
 .btn {
   padding: 14px 0;
-  border-radius: 4px;
-  border: none;
-  transition: 0.3s ease-in-out;
+  //border-radius: 4px;
+  transition: 0.3s ease-in-out !important;
   &-primary {
     @extend .btn;
     background-color: $primary;
     color: $white;
     &:hover {
       opacity: 0.9;
+    }
+  }
+  &-outline-primary {
+    @extend .btn;
+    background-color: transparent;
+    color: $primary;
+    border: 1px solid $primary;
+    &:hover {
+      background-color: $primary;
+      color: $white;
+    }
+  }
+  &-white {
+    @extend .btn;
+    background-color: $white !important;
+    color: $primary !important;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+  &-outline-white {
+    @extend .btn;
+    background-color: $primary;
+    color: $white !important;
+    border: 1px solid $white !important;
+    &:hover {
+      background-color: $white !important;
+      color: $primary !important;
     }
   }
 }

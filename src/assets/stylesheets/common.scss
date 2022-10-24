@@ -1,0 +1,16 @@
+.title {
+  font-size: 36px;
+  @media (min-width: 576px) {
+    font-size: 50px;
+  }
+  @media (min-width: 992px) {
+    font-size: 70px;
+  }
+}
+
+.background__image {
+  transition: 0.3s ease-in-out;
+  &:hover {
+    opacity: 0.8;
+  }
+}

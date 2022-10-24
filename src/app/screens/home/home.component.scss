@@ -1,15 +1,27 @@
 .home {
   .header {
     &__title {
-      font-size: 50px;
+      font-size: 30px;
+      @media (min-width: 576px) {
+        font-size: 56px;
+      }
       @media (min-width: 992px) {
+        font-size: 60px;
+      }
+      @media (min-width: 1200px) {
+        font-size: 70px;
+      }
+      @media (min-width: 1400px) {
         font-size: 100px;
       }
     }
     .sub-header {
-      margin-top: -20px;
+      margin-top: -16px;
+      font-size: 16px;
       @media (min-width: 992px) {
-        font-size: 18px;
+        margin-top: -24px;
+        font-size: 30px;
+        padding: 0 20px;
       }
     }
   }

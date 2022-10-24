@@ -1,49 +1,52 @@
-.accordion-button:not(.collapsed) {
-  font-size: 28px !important;
-  font-weight: 500 !important;
-  color: $primary !important;
-  border-color: transparent !important;
-  background-color: transparent !important;
-  box-shadow: none !important;
-}
-
-.accordion-button {
-  position: static !important;
-  font-size: 28px !important;
-  font-weight: 500 !important;
-  color: $primary !important;
-  padding: 0 !important;
-  z-index: 1 !important;
-  &:focus {
-    z-index: 1 !important;
-  }
-}
-
-.accordion-button:focus {
-  box-shadow: none !important;
-}
-
 .accordion {
   --bs-accordion-border-width: 0 !important;
   --bs-accordion-bg: transparent !important;
   &-body {
     padding: 10px 0 !important;
   }
+  &-button {
+    position: static !important;
+    font-size: 28px !important;
+    font-weight: 500 !important;
+    color: $primary !important;
+    padding: 0 !important;
+    z-index: 1 !important;
+    &:focus {
+      z-index: 1 !important;
+      box-shadow: none !important;
+    }
+    &:not(.collapsed) {
+      font-size: 28px !important;
+      font-weight: 500 !important;
+      color: $primary !important;
+      border-color: transparent !important;
+      background-color: transparent !important;
+      box-shadow: none !important;
+    }
+  }
 }
 
 .navbar {
   width: 100% !important;
-  background-color: rgb(66, 78, 63) !important;
+  background-color: $secondary !important;
   z-index: 100 !important;
+  @media (min-width: 992px) {
+    margin: 0 auto !important;
+    width: 90% !important;
+  }
+  @media (min-width: 1200px) {
+    margin: 0 auto !important;
+    width: 85% !important;
+  }
 }
 
 @media (min-width: 992px) {
   .navbar-expand-lg {
     flex-wrap: nowrap;
     justify-content: space-between !important;
+    transition: 0.3s ease-in-out !important;
   }
 }
-
 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
@@ -53,27 +56,59 @@
 }
 
 .nav-link {
-  color: $white !important;
-  font-size: 18px !important;
-  font-weight: 400 !important;
-  //&:hover {
-  //  background-color: $grey !important;
-  //}
-}
-
-.navbar-collapse {
-  transition: 0.3s ease-out !important;
-}
-
-.navbar-toggler:focus {
-  color: $white !important;
-  text-decoration: none;
-  outline: 0;
-  --bs-navbar-toggler-focus-width: 1px;
-  box-shadow: 1px $white !important;
+  color: $primary !important;
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  &:hover {
+    opacity: 0.7 !important;
+  }
 }
 
 .navbar-toggler {
   padding: 0 10px !important;
-  border-radius: 4px !important;
+  border-radius: 0 !important;
+  border: none !important;
+  &:focus {
+    color: $primary !important;
+    text-decoration: none;
+    outline: 0;
+    --bs-navbar-toggler-focus-width: 0;
+    box-shadow: 0 $primary !important;
+  }
+}
+
+.nav-item {
+  padding: 0;
+  @media (min-width: 992px) {
+    padding: 0 10px;
+  }
+}
+
+.carousel {
+  z-index: 1 !important;
+  &-control-next {
+    justify-content: end !important;
+    margin-right: 0 !important;
+    @media (min-width: 992px) {
+      margin-right: 80px !important;
+    }
+  }
+  &-control-prev {
+    justify-content: start !important;
+    margin-left: 0 !important;
+    @media (min-width: 992px) {
+      margin-left: 80px !important;
+    }
+  }
+  &-inner {
+    width: 85% !important;
+    margin: 0 auto !important;
+    background-color: $primary !important;
+    padding: 40px 0 !important;
+    z-index: 1 !important;
+    @media (min-width: 992px) {
+      width: 56% !important;
+      padding: 80px 0 !important;
+    }
+  }
 }
