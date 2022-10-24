@@ -1,38 +1,69 @@
-<div>
-  <div class="w-100 bg-primary">
-    <div class="col-12 col-md-9 py-8 py-md-16 mx-auto text-white d-flex flex-column flex-md-row align-items-center justify-content-center br-b-white">
-      <p><fa-icon [icon]="faLocationDot" class="me-10"></fa-icon>Gangtey Phobjikha, Punakha, Bhutan</p>
-      <a class="ms-0 ms-md-30 text-white" href="tel://+97517716523"><fa-icon [icon]="faPhone" class="me-10"></fa-icon>+975 17716523</a>
-    </div>
-  </div>
-  <nav class="navbar navbar-expand-lg py-14 px-0 px-md-50 box-shadow--primary">
-    <a class="navbar-brand ms-16 ms-md-0" href="#">
-      Brand
-    </a>
-    <button class="navbar-toggler me-16 me-md-0" type="button"
-            (click)="toggleNavbar()">
-      <fa-icon class="display-28 text-white" [icon]="faBars"></fa-icon>
+<div class="w-100 bg-secondary box-shadow--primary">
+  <nav class="navbar navbar-light bg-secondary navbar-expand-lg px-16 py-24 px-lg-48">
+    <a class="navbar-brand" href="#">My Brand</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse me-16 me-md-0"
-         [ngClass]="{ 'show': navbarOpen }">
-      <ul class="navbar-nav text-primary">
-        <li class="nav-item px-10">
-          <a class="nav-link px-10 py-14" href="#">Home</a>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href='#'>Home</a>
         </li>
-        <li class="nav-item px-10">
-          <a class="nav-link px-10 py-14" href="#">About Us</a>
+        <li class="nav-item">
+          <a class="nav-link" href='#'>About Us</a>
         </li>
-        <li class="nav-item px-10">
-          <a class="nav-link px-10 py-14" href="#">Events</a>
+        <li class="nav-item">
+          <a class="nav-link" href='#'>Events</a>
         </li>
-        <li class="nav-item px-10">
-          <a class="nav-link px-10 py-14" href="#">Accomodations</a>
+        <li class="nav-item">
+          <a class="nav-link" href='#'>Accomodations</a>
         </li>
-        <li class="nav-item px-10">
-          <a class="nav-link px-10 py-14" href="#">Contact</a>
+        <li class="nav-item">
+          <a class="nav-link" href='#'>Contact</a>
         </li>
       </ul>
     </div>
   </nav>
-
 </div>
+
+
+
+
+<!--  <div class="w-100 bg-primary">-->
+<!--    <div class="col-12 col-md-9 py-8 py-md-16 mx-auto text-white d-flex flex-column flex-md-row align-items-center justify-content-center br-b-white">-->
+<!--      <p><fa-icon [icon]="faLocationDot" class="me-10"></fa-icon>Gangtey Phobjikha, Punakha, Bhutan</p>-->
+<!--      <a class="ms-0 ms-md-30 text-white" href="tel://+97517716523"><fa-icon [icon]="faPhone" class="me-10"></fa-icon>+975 17716523</a>-->
+<!--    </div>-->
+<!--  </div>-->
+
+
+<!--<div id="navigation" class="col-12 bg-secondary br-b-primary">-->
+<!--  <nav class="navbar navbar-expand-lg py-20 px-0 px-md-30 px-lg-50">-->
+<!--    <a class="navbar-brand ms-16 ms-md-0" href="#">-->
+<!--      Brand-->
+<!--    </a>-->
+<!--    <button class="navbar-toggler me-16 me-md-0" type="button"-->
+<!--            (click)="navbarOpen = !navbarOpen">-->
+<!--      <fa-icon class="display-30 text-primary" [icon]="faBars"></fa-icon>-->
+<!--    </button>-->
+<!--    <div class="collapse navbar-collapse me-16 me-md-0" [ngClass]="{ 'show': navbarOpen }" @slidein>-->
+<!--      <ul id="nav" class="navbar-nav animation text-primary">-->
+<!--        <li class="nav-item animation px-10">-->
+<!--          <a class="nav-link px-10 py-14" href="#">Home</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item animation px-10">-->
+<!--          <a class="nav-link px-10 py-14" href="#">About Us</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item px-10">-->
+<!--          <a class="nav-link px-10 py-14" href="#">Events</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item px-10">-->
+<!--          <a class="nav-link px-10 py-14" href="#">Accomodations</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item px-10">-->
+<!--          <a class="nav-link px-10 py-14" href="#">Contact</a>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--    </div>-->
+<!--  </nav>-->
+<!--</div>-->
