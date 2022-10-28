@@ -1,7 +1,19 @@
-.navigation {
-  transition: 1s ease-in;
+.offcanvas_contact {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
 }
 
-.animation {
-  transition: 1s ease-in !important;
+.contact {
+  position: relative;
+  border-radius: 0;
+  top: 0 !important;
+  width: 100%;
+  @media (min-width: 576px) {
+    width: 500px;
+    border-radius: 10px;
+    top: 100px !important;
+  }
 }

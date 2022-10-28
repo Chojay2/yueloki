@@ -1,12 +1,11 @@
 @import "./assets/stylesheets/styles.scss";
-@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
 
 html, body {
-    font-family: "Oxygen";
+    font-family: 'Poppins' !important;
     font-size: 16px;
+  font-weight: 400 !important;
     margin: 0;
     padding: 0;
-    background-color: #F2F0EC !important;
 }
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';

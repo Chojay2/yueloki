@@ -14,6 +14,9 @@ import { RoomsComponent } from './components/rooms/rooms.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { TestomonialCarouselComponent } from './components/testomonial-carousel/testomonial-carousel.component';
 import { EventsComponent } from './components/events/events.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { ServicesComponent } from './components/services/services.component';
+import { AboutUsDetailComponent } from './screens/about-us-detail/about-us-detail.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { EventsComponent } from './components/events/events.component';
     RoomsComponent,
     AboutUsComponent,
     TestomonialCarouselComponent,
-    EventsComponent
+    EventsComponent,
+    ContactUsComponent,
+    ServicesComponent,
+    AboutUsDetailComponent
   ],
   imports: [
     BrowserModule,

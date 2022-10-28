@@ -6,17 +6,17 @@
   }
   &-button {
     position: static !important;
-    font-size: 28px !important;
+    font-size: 24px !important;
     font-weight: 500 !important;
     color: $primary !important;
-    padding: 0 !important;
+    padding: 0 0 16px !important;
     z-index: 1 !important;
     &:focus {
       z-index: 1 !important;
       box-shadow: none !important;
     }
     &:not(.collapsed) {
-      font-size: 28px !important;
+      font-size: 24px !important;
       font-weight: 500 !important;
       color: $primary !important;
       border-color: transparent !important;
@@ -26,9 +26,14 @@
   }
 }
 
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-bottom: 1px solid $primary !important;
+}
+
+
 .navbar {
   width: 100% !important;
-  background-color: $secondary !important;
+  background-color: $white !important;
   z-index: 100 !important;
   @media (min-width: 992px) {
     margin: 0 auto !important;
@@ -68,6 +73,7 @@
   padding: 0 10px !important;
   border-radius: 0 !important;
   border: none !important;
+  color: $primary !important;
   &:focus {
     color: $primary !important;
     text-decoration: none;
@@ -87,6 +93,7 @@
 .carousel {
   z-index: 1 !important;
   &-control-next {
+    width: auto !important;
     justify-content: end !important;
     margin-right: 0 !important;
     @media (min-width: 992px) {
@@ -94,18 +101,29 @@
     }
   }
   &-control-prev {
+    width: auto !important;
     justify-content: start !important;
     margin-left: 0 !important;
     @media (min-width: 992px) {
       margin-left: 80px !important;
     }
   }
+  &-control-next, &-control-prev {
+    display: none !important;
+    @media (min-width: 576px) {
+      display: block !important;
+    }
+  }
   &-inner {
-    width: 85% !important;
+    width: 100% !important;
     margin: 0 auto !important;
     background-color: $primary !important;
-    padding: 40px 0 !important;
+    padding: 0 0 50px !important;
     z-index: 1 !important;
+    @media (min-width: 576px) {
+      width: 85% !important;
+      padding: 80px 0 !important;
+    }
     @media (min-width: 992px) {
       width: 56% !important;
       padding: 80px 0 !important;
