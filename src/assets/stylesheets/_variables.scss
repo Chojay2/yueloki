@@ -1,5 +1,5 @@
 //overwriting bootstrap colors
-$primary: rgb(66, 78, 63);
+$primary: #206928;
 $secondary: #F2F0EC;
 $success: #638A3F;
 $success-300: #759D47;
@@ -86,7 +86,7 @@ $display-font-sizes: (
 $headings-line-height: 1.5 !default;
 $display-font-weight: 400 !default;
 $display-line-height: $headings-line-height !default;
-$headings-color: $primary !default;
+$headings-color: rgba($black, 0.6) !default;
 
 $border-color: $grey !default;
 

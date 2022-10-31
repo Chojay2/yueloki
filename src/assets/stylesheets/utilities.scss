@@ -125,9 +125,19 @@
   &-white {
     @extend .btn;
     background-color: $white !important;
-    color: $primary !important;
+    color: $black !important;
     &:hover {
       opacity: 0.9;
+    }
+  }
+  &-outline-black {
+    @extend .btn;
+    background-color: transparent;
+    border: 1px solid rgba($black, 0.6) !important;
+    color: rgba($black, 0.6) !important;
+    &:hover {
+      border: 1px solid $black !important;
+      color: $black !important;
     }
   }
   &-outline-white {
@@ -137,7 +147,7 @@
     border: 1px solid $white !important;
     &:hover {
       background-color: $white !important;
-      color: $primary !important;
+      color: $black !important;
     }
   }
 }
