@@ -9,8 +9,30 @@
 }
 
 .background__image {
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in;
   &:hover {
-    opacity: 0.8;
+    opacity: 0.9;
+  }
+}
+
+.right-decor {
+  transform: rotate(90deg);
+}
+
+.low-left-decor {
+  transform: rotate(-90deg);
+}
+
+.low-right-decor {
+  transform: rotate(180deg);
+}
+
+.corner-decor {
+  width: 50px;
+  @media (min-width: 576px) {
+    width: 100px;
+  }
+  @media (min-width: 992px) {
+    width: 120px;
   }
 }
