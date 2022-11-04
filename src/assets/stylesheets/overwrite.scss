@@ -8,7 +8,7 @@
     position: static !important;
     font-size: 24px !important;
     font-weight: 500 !important;
-    color: $black !important;
+    color: $primary !important;
     padding: 0 0 16px !important;
     z-index: 1 !important;
     &:focus {
@@ -27,7 +27,7 @@
 }
 
 .accordion-item:last-of-type .accordion-button.collapsed {
-  border-bottom: 1px solid $black !important;
+  border-bottom: 1px solid $primary !important;
 }
 
 .navbar {

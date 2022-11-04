@@ -1,0 +1,18 @@
+.background {
+  width: 100%;
+  background: url("../../../assets/images/black_necked_crane .jpg") rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  background-blend-mode: multiply;
+  height: 450px;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  @media (min-width: 768px) {
+    width: 90%;
+    height: 550px;
+  }
+  @media (min-width: 1200px) {
+    width: 33%;
+    height: 600px;
+  }
+}
