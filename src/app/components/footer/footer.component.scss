@@ -1,0 +1,38 @@
+@import "../../../assets/stylesheets/variables.scss";
+
+.footer {
+  &__logo {
+    transition: 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.04);
+    }
+    @media (min-width: 576px) {
+      width: 70px;
+    }
+    @media (min-width: 992px) {
+      width: 90px;
+    }
+    @media (min-width: 1400px) {
+      width: 140px;
+    }
+  }
+}
+
+.header {
+  &__title {
+    color: $white;
+    font-size: 30px;
+    @media (min-width: 576px) {
+      font-size: 56px;
+    }
+    @media (min-width: 992px) {
+      font-size: 60px;
+    }
+    @media (min-width: 1200px) {
+      font-size: 70px;
+    }
+    @media (min-width: 1400px) {
+      font-size: 80px;
+    }
+  }
+}

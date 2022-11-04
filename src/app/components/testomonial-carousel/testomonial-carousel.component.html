@@ -1,9 +1,9 @@
-<div class="bg-primary">
+<div class="bg-primary position-relative">
   <div class="w-100 d-flex justify-content-between p-10 p-md-20">
-    <img src="./assets/images/corner_decor.svg" alt="" class="corner-decor">
-    <img src="./assets/images/corner_decor.svg" alt="" class="right-decor corner-decor">
+    <img src="./assets/images/corner_decor.svg" alt="" class="corner-decor position-absolute">
+    <img src="./assets/images/corner_decor.svg" alt="" class="right-decor corner-decor position-absolute">
   </div>
-  <div class="carousel bg-primary px-20 px-md-40">
+  <div class="carousel bg-primary px-20 px-md-40 py-74">
     <ngb-carousel
       #carousel
       [interval]="3000"
@@ -12,25 +12,28 @@
       (slide)="onSlide($event)"
     >
       <ng-template ngbSlide>
-        <div class="d-flex flex-column flex-md-row text-center text-md-start align-items-center justify-content-center gap-30 w-100 bg-white px-30 py-40 py-md-40 py-lg-84">
+        <div class="d-flex flex-column flex-md-row text-center text-md-start align-items-center justify-content-center gap-30 w-100 bg-white px-30 py-40 py-md-40 py-lg-84"
+        data-aos="slide-up" data-aos-delay="100" data-aos-once="true">
           <img src="../../../assets/images/avatar.jpg" alt="" class="rounded-circle profile col-12 col-md-3">
-          <p class="col-12 col-md-5">The Best Of the best Room for your comfort The Best Of the best Room for your comfort The Best
+          <p class="col-12 col-md-5 display-20">The Best Of the best Room for your comfort The Best Of the best Room for your comfort The Best
             Of the best Room for your comfort The Best Of the best Room for your comfortThe Best Of the best
           </p>
         </div>
       </ng-template>
       <ng-template ngbSlide>
-        <div class="d-flex flex-column flex-md-row text-center text-md-start align-items-center justify-content-center gap-30 w-100 bg-white px-30 py-40 py-md-40 py-lg-84">
+        <div class="d-flex flex-column flex-md-row text-center text-md-start align-items-center justify-content-center gap-30 w-100 bg-white px-30 py-40 py-md-40 py-lg-84"
+        data-aos="slide-up" data-aos-delay="200" data-aos-once="true">
           <img src="../../../assets/images/avatar.jpg" alt="" class="rounded-circle profile col-12 col-md-3">
-          <p class="col-12 col-md-5">The Best Of the best Room for your comfort The Best Of the best Room for your comfort The Best
+          <p class="col-12 col-md-5 display-20">The Best Of the best Room for your comfort The Best Of the best Room for your comfort The Best
             Of the best Room for your comfort The Best Of the best Room for your comfortThe Best Of the best
           </p>
         </div>
       </ng-template>
       <ng-template ngbSlide>
-        <div class="d-flex flex-column flex-md-row text-center text-md-start align-items-center justify-content-center gap-30 w-100 bg-white px-30 py-40 py-md-40 py-lg-84">
+        <div class="d-flex flex-column flex-md-row text-center text-md-start align-items-center justify-content-center gap-30 w-100 bg-white px-30 py-40 py-md-40 py-lg-84"
+        data-aos="slide-up" data-aos-delay="300" data-aos-once="true">
           <img src="../../../assets/images/avatar.jpg" alt="" class="rounded-circle profile col-12 col-md-3">
-          <p class="col-12 col-md-5">The Best Of the best Room for your comfort The Best Of the best Room for your comfort The Best
+          <p class="col-12 col-md-5 display-20">The Best Of the best Room for your comfort The Best Of the best Room for your comfort The Best
             Of the best Room for your comfort The Best Of the best Room for your comfortThe Best Of the best
           </p>
         </div>
@@ -38,7 +41,7 @@
     </ngb-carousel>
   </div>
   <div class="w-100 d-flex justify-content-between p-10 p-md-20">
-    <img src="./assets/images/corner_decor.svg" alt="" class="low-left-decor corner-decor">
-    <img src="./assets/images/corner_decor.svg" alt="" class="low-right-decor corner-decor">
+    <img src="./assets/images/corner_decor.svg" alt="" class="low-left-decor corner-decor position-absolute">
+    <img src="./assets/images/corner_decor.svg" alt="" class="low-right-decor corner-decor position-absolute">
   </div>
 </div>
