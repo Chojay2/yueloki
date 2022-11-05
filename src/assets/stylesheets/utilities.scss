@@ -108,9 +108,12 @@
 }
 
 .btn {
-  padding: 14px 40px !important;
+  padding: 8px 20px !important;
   border-radius: 8px !important;
   transition: 0.2s ease-in !important;
+  @media (min-width: 576px) {
+    padding: 14px 40px !important;
+  }
   &-primary {
     @extend .btn;
     background-color: $primary;
