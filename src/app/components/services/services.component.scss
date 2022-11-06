@@ -1,6 +1,17 @@
-.background {
-  width: 100%;
+.background-picnic {
   background: url("../../../assets/images/black_necked_crane .jpg") rgba(0, 0, 0, 0.6);
+}
+
+.background-trek {
+  background: url("../../../assets/images/trekk.jpg") rgba(0, 0, 0, 0.6);
+}
+
+.background-prayers {
+  background: url("../../../assets/images/incense.jpg") rgba(0, 0, 0, 0.6);
+}
+
+.background-picnic, .background-trek, .background-prayers {
+  width: 100%;
   background-size: cover;
   background-blend-mode: multiply;
   height: 450px;

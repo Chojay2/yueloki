@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbRatingConfig } from "@ng-bootstrap/ng-bootstrap";
-import { faBed, faHeadset, faDoorOpen, faSquareCheck, faShield } from '@fortawesome/free-solid-svg-icons';
+import { faBed, faHeadset, faDoorOpen, faSquareCheck, faShield, faWifi, faToiletPortable, faTv, faBowlFood } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-hotel-detail',
@@ -14,6 +14,10 @@ export class HotelDetailComponent implements OnInit {
   faDoorOpen = faDoorOpen;
   faSquareCheck = faSquareCheck;
   faShield = faShield;
+  faWifi = faWifi;
+  faToiletPortable = faToiletPortable;
+  faTv = faTv;
+  faBowlFood = faBowlFood;
 
   constructor(config: NgbRatingConfig) {
     config.max = 5;
