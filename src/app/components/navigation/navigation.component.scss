@@ -4,6 +4,7 @@
   top: 0;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 999;
+  overflow: hidden;
 }
 
 .contact {
@@ -11,9 +12,17 @@
   border-radius: 0;
   top: 0 !important;
   width: 100%;
+  height: auto;
+  overflow-y: scroll;
   @media (min-width: 576px) {
     width: 500px;
+    height: calc(100vh - 50px);
     border-radius: 10px;
     top: 30px !important;
   }
+}
+
+::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
 }

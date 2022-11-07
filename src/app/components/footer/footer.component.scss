@@ -16,6 +16,9 @@
       width: 100px;
     }
   }
+  &__links:hover {
+    transform: scale(1.08);
+  }
 }
 
 .header {

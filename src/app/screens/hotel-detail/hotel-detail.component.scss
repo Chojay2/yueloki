@@ -9,6 +9,23 @@ ngb-rating {
   @media screen and (max-width: 992px) {
     height: auto;
   }
+  @media screen and (min-width: 992px) {
+    height: calc(100vh - 300px);
+  }
+}
+
+.sub__image-container {
+  height: auto;
+  @media screen and (min-width: 992px) {
+    height: calc(100vh - 300px);
+  }
+}
+
+.sub-images {
+  height: 150px;
+  @media screen and (min-width: 992px) {
+    height: auto;
+  }
 }
 
 .form__container {
@@ -18,6 +35,7 @@ ngb-rating {
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
   height: 4px;
+  width: 4px;
 }
 
 ::-webkit-scrollbar-track {

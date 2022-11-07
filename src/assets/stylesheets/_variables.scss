@@ -142,6 +142,17 @@ $border-style: solid !default;
 $border-color: $primary !default;
 $border-color-translucent: rgba($primary, .175) !default;
 
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1800px,
+  xxxxl: 2000px
+) !default;
+
 :root {
   --primary: rgb(66, 78, 63);
   --secondary: #F2F0EC;
