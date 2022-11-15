@@ -19,6 +19,8 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
 import { ServicesComponent } from './components/services/services.component';
 import { AboutUsDetailComponent } from './screens/about-us-detail/about-us-detail.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { BlackNeckedCraneFestivalComponent } from './components/black-necked-crane-festival/black-necked-crane-festival.component';
+import { ExperiencesComponent } from './components/experiences/experiences.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { FooterComponent } from './components/footer/footer.component';
     ContactUsComponent,
     ServicesComponent,
     AboutUsDetailComponent,
-    FooterComponent
+    FooterComponent,
+    BlackNeckedCraneFestivalComponent,
+    ExperiencesComponent
   ],
   imports: [
     BrowserModule,

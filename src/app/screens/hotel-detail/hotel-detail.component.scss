@@ -6,23 +6,41 @@ ngb-rating {
 }
 
 .background {
-  @media screen and (max-width: 992px) {
-    height: auto;
-  }
+  height: auto;
   @media screen and (min-width: 992px) {
+    height: calc(100vh - 400px);
+  }
+  @media screen and (min-width: 1200px) {
+    height: calc(100vh - 350px);
+  }
+  @media screen and (min-width: 1400px) {
     height: calc(100vh - 300px);
   }
+  //@media screen and (min-width: 1600px) {
+  //  height: calc(100vh - 200px);
+  //}
 }
 
 .sub__image-container {
-  height: auto;
-  @media screen and (min-width: 992px) {
+  height: 160px;
+  overflow-x: scroll;
+  //@media screen and (min-width: 992px) {
+  //  height: calc(100vh - 700px);
+  //}
+  @media screen and (min-width: 1200px) {
+    height: calc(100vh - 350px);
+  }
+  @media screen and (min-width: 1400px) {
     height: calc(100vh - 300px);
   }
+  //@media screen and (min-width: 1600px) {
+  //  height: calc(100vh - 300px);
+  //}
 }
 
 .sub-images {
   height: 150px;
+  width: auto;
   @media screen and (min-width: 992px) {
     height: auto;
   }

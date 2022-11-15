@@ -2,23 +2,25 @@
   --bs-accordion-border-width: 0 !important;
   --bs-accordion-bg: transparent !important;
   &-body {
-    padding: 10px 0 !important;
+    padding: 10px !important;
+    background-color: $white !important;
   }
   &-button {
     position: static !important;
-    font-size: 24px !important;
+    font-size: 20px !important;
     font-weight: 500 !important;
     color: $primary !important;
     padding: 0 0 16px !important;
+    border-radius: 0 !important;
     z-index: 1 !important;
     &:focus {
       z-index: 1 !important;
       box-shadow: none !important;
     }
     &:not(.collapsed) {
-      font-size: 24px !important;
+      font-size: 20px !important;
       font-weight: 500 !important;
-      color: $black !important;
+      color: $primary !important;
       border-color: transparent !important;
       background-color: transparent !important;
       box-shadow: none !important;
@@ -27,12 +29,12 @@
 }
 
 .accordion-item:last-of-type .accordion-button.collapsed {
-  border-bottom: 1px solid $primary !important;
+  border-bottom: 1px solid rgba(86, 95, 81, 0.6) !important;
 }
 
 .navbar {
   width: 100% !important;
-  background-color: $white !important;
+  background-color: $primary !important;
   z-index: 100 !important;
   @media (min-width: 992px) {
     margin: 0 auto !important;
@@ -60,12 +62,9 @@
 }
 
 .nav-link {
-  color: $primary !important;
-  font-size: 16px !important;
+  color: $white !important;
+  font-size: 18px !important;
   font-weight: 500 !important;
-  @media (min-width: 992px) {
-    font-size: 20px !important;
-  }
   &:hover {
     opacity: 0.7 !important;
   }
@@ -75,13 +74,13 @@
   padding: 0 10px !important;
   border-radius: 0 !important;
   border: none !important;
-  color: $primary !important;
+  color: $white !important;
   &:focus {
-    color: $primary !important;
+    color: $white !important;
     text-decoration: none;
     outline: 0;
     --bs-navbar-toggler-focus-width: 0;
-    box-shadow: 0 $primary !important;
+    box-shadow: 0 $white !important;
   }
 }
 
@@ -98,17 +97,11 @@
     width: auto !important;
     justify-content: end !important;
     margin-right: 0 !important;
-    @media (min-width: 992px) {
-      margin-right: 80px !important;
-    }
   }
   &-control-prev {
     width: auto !important;
     justify-content: start !important;
     margin-left: 0 !important;
-    @media (min-width: 992px) {
-      margin-left: 80px !important;
-    }
   }
   &-control-next, &-control-prev {
     display: none !important;
@@ -125,7 +118,7 @@
       width: 85% !important;
     }
     @media (min-width: 992px) {
-      width: 56% !important;
+      width: 70% !important;
     }
   }
 }
@@ -133,4 +126,11 @@
 .carousel-indicators [data-bs-target] {
   background-color: $primary !important;
   padding: 2px 10px !important;
+}
+
+input, textarea {
+  font-size: 16px !important;
+  padding: 10px !important;
+  background-color: $white;
+  border-radius: 4px !important;
 }

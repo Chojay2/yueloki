@@ -8,12 +8,13 @@
 }
 
 .contact {
-  position: absolute;
+  position: fixed;
   border-radius: 0;
   top: 0 !important;
   width: 100%;
   height: auto;
   overflow-y: scroll;
+  z-index: 9999;
   @media (min-width: 576px) {
     width: 500px;
     height: calc(100vh - 50px);

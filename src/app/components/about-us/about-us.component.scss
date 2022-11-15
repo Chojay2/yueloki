@@ -6,6 +6,10 @@
 }
 
 .about-us {
+  width: 100%;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../assets/images/about__background.jpg");
   background-size: cover;
+  @media (min-width: 768px) {
+    width: 79%;
+  }
 }

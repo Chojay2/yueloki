@@ -2,15 +2,16 @@
 
 html, body {
     font-family: 'Poppins', sans-serif !important;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400 !important;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    background-color: $secondary !important;
 }
 
 h1, h2, h3 {
-  font-family: 'Roboto Serif', serif !important;
+  font-family: 'El Messiri', sans-serif !important;
 }
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';

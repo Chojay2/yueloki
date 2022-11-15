@@ -58,6 +58,24 @@
   width: 50px;
   z-index: 9;
   @media (min-width: 768px) {
-    width: 100px;
+    width: 80px;
+  }
+}
+
+.header {
+  &__title {
+    font-size: 30px;
+    @media (min-width: 576px) {
+      font-size: 56px;
+    }
+    @media (min-width: 992px) {
+      font-size: 50px;
+    }
+    @media (min-width: 1200px) {
+      font-size: 60px;
+    }
+    @media (min-width: 1400px) {
+      font-size: 70px;
+    }
   }
 }

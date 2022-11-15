@@ -1,24 +1,15 @@
 //overwriting bootstrap colors
-$primary: #53624F;
-$secondary: #F58634;
-$success: #00AF91;
-$success-300: #759D47;
+$primary: #565F51;
+$secondary: #F2F0EC;
+$success: #1C1F19;
 $danger: #D8433A;
-$danger-700: #B83931;
 $warning: #F1B22A;
-$yellow: #FB8603;
-$dark: #dee2e6;
+$dark: #1C1F19;
 $info: #5AA3ED;
-$violet: #9CA5D6;
-$pink: #EF7098;
 $purple: #8330A4;
 $white: rgb(255, 255, 255);
 $black: rgb(0, 0, 0);
-$black-100: #E8E9F2;
-$green: rgb(179, 207, 169);
 $grey: #CBCCC5;
-$blue: rgb(63, 81, 181);
-$blue-200: rgba(63, 81, 181, 0.16);
 
 
 //custom margin and padding
@@ -58,6 +49,7 @@ $spacers: (
         68: 68px,
         74: 74px,
         84: 84px,
+        100: 100px
 );
 
 //custom font-sizes
@@ -97,11 +89,13 @@ $font-weight-semibold: 600;
 $font-weight-bold: 700;
 $font-weight-bolder: 800;
 
+$font-size-base: 16px !default;
+
 //changing units to px
 $nav-link-padding-y: 8px !default;
 $nav-link-padding-x: 6px !default;
 
-$font-size-base: 16px !default;
+$font-size-base: 1px !default;
 
 //custom font-size for h-tag
 $h1-font-size: 30px !default;
@@ -157,23 +151,11 @@ $grid-breakpoints: (
   --primary: rgb(66, 78, 63);
   --secondary: #F2F0EC;
   --success: #638A3F;
-  --success-300: #759D47;
   --danger: #D8433A;
-  --danger-700: #B83931;
-  --dodgerblue: #3F87DE;
   --warning: #F1B22A;
-  --yellow: #FB8603;
   --info: #5AA3ED;
   --violet: #9CA5D6;
-  --pink: #EF7098;
   --white: 255, 255, 255;
   --black: 0, 0, 0;
-  --black-10: #E8E9F2;
-  --blue: 63, 81, 181;
-  --blue-200: 63, 81, 181, 0.16;
   --grey: #CBCCC5;
-  --purple: #8330A4;
-  --light-green: #62D68B;
-  --light-sky: 98, 214, 139;
-  --light-info: #4FADFF;
 }

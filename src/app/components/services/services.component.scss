@@ -1,13 +1,13 @@
 .background-picnic {
-  background: url("../../../assets/images/black_necked_crane .jpg") rgba(0, 0, 0, 0.6);
+  background: url("../../../assets/images/woods.jpg"), rgba(0, 0, 0, 0.6);
 }
 
 .background-trek {
-  background: url("../../../assets/images/trekk.jpg") rgba(0, 0, 0, 0.6);
+  background: url("../../../assets/images/trekk.jpg"), rgba(0, 0, 0, 0.6);
 }
 
 .background-prayers {
-  background: url("../../../assets/images/incense.jpg") rgba(0, 0, 0, 0.6);
+  background: url("../../../assets/images/incense.jpg"), rgba(0, 0, 0, 0.6);
 }
 
 .background-picnic, .background-trek, .background-prayers {
@@ -18,12 +18,20 @@
   &:hover {
     background-color: rgba(0, 0, 0, 0.4);
   }
+  @media (min-width: 576px) {
+    width: 80%;
+    height: 450px;
+  }
   @media (min-width: 768px) {
     width: 90%;
-    height: 550px;
+    height: 500px;
+  }
+  @media (min-width: 992px) {
+    width: 90%;
+    height: 450px;
   }
   @media (min-width: 1200px) {
     width: 33%;
-    height: 500px;
+    height: 400px;
   }
 }

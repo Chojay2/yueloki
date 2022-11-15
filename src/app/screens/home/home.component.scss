@@ -1,7 +1,22 @@
+@import "../../../assets/stylesheets/variables.scss";
+
 .home {
+  .header__background {
+    width: 100%;
+    min-height: 20vh;
+    background: url("../../../assets/images/header__background.jpg") rgba(0, 0, 0, 0.4);
+    background-size: cover;
+    background-blend-mode: multiply;
+    @media (min-width: 992px) {
+      height: 40vh;
+    }
+  }
+  .short-description {
+    background-color: $dark;
+  }
   .header {
     &__title {
-      font-size: 30px;
+      font-size: 40px;
       @media (min-width: 576px) {
         font-size: 56px;
       }
@@ -48,6 +63,12 @@
     font-size: 40px;
     @media (min-width: 576px) {
       font-size: 70px;
+    }
+  }
+  .testimonial-container {
+    width: 100%;
+    @media (min-width: 992px) {
+      width: 80%;
     }
   }
 }
