@@ -9,9 +9,13 @@
 }
 
 .background__image {
-  opacity: 0.8;
+  opacity: 1;
+  transition: 0.3s ease-in-out;
   &:hover {
-    opacity: 1;
+    transform: scale(1.01);
+    box-shadow: 1px 1px 21px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 1px 21px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 21px -5px rgba(0,0,0,0.75);
   }
 }
 
@@ -66,16 +70,13 @@
   &__title {
     font-size: 30px;
     @media (min-width: 576px) {
-      font-size: 56px;
+      font-size: 40px;
     }
     @media (min-width: 992px) {
       font-size: 50px;
     }
     @media (min-width: 1200px) {
       font-size: 60px;
-    }
-    @media (min-width: 1400px) {
-      font-size: 70px;
     }
   }
 }

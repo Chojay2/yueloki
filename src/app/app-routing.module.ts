@@ -5,6 +5,10 @@ import { HotelDetailComponent } from "./screens/hotel-detail/hotel-detail.compon
 import { HomeComponent } from "./screens/home/home.component";
 import { EventsComponent } from "./components/events/events.component";
 import { ExperiencesComponent } from "./components/experiences/experiences.component";
+import {
+  BlackNeckedCraneFestivalComponent
+} from "./components/black-necked-crane-festival/black-necked-crane-festival.component";
+import { GangteyTshechuComponent } from "./components/gangtey-tshechu/gangtey-tshechu.component";
 
 const routes: Routes = [
   {path: 'about-us', component: AboutUsDetailComponent},
@@ -12,6 +16,8 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'events', component: EventsComponent},
   {path: 'experiences', component: ExperiencesComponent},
+  {path: 'black-necked-crane-festival', component: BlackNeckedCraneFestivalComponent},
+  {path: 'gangtey-tshechu', component: GangteyTshechuComponent},
   {path: '**', redirectTo: 'home'},
 ];
 

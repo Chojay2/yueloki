@@ -21,6 +21,7 @@ import { AboutUsDetailComponent } from './screens/about-us-detail/about-us-detai
 import { FooterComponent } from './components/footer/footer.component';
 import { BlackNeckedCraneFestivalComponent } from './components/black-necked-crane-festival/black-necked-crane-festival.component';
 import { ExperiencesComponent } from './components/experiences/experiences.component';
+import { GangteyTshechuComponent } from './components/gangtey-tshechu/gangtey-tshechu.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ExperiencesComponent } from './components/experiences/experiences.compo
     AboutUsDetailComponent,
     FooterComponent,
     BlackNeckedCraneFestivalComponent,
-    ExperiencesComponent
+    ExperiencesComponent,
+    GangteyTshechuComponent
   ],
   imports: [
     BrowserModule,
