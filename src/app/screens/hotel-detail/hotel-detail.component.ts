@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 import { NgbRatingConfig } from "@ng-bootstrap/ng-bootstrap";
 import { faBed, faHeadset, faDoorOpen, faSquareCheck, faShield, faWifi, faToiletPortable, faTv, faBowlFood } from '@fortawesome/free-solid-svg-icons';
 
@@ -19,7 +20,13 @@ export class HotelDetailComponent implements OnInit {
   faTv = faTv;
   faBowlFood = faBowlFood;
 
-  constructor(config: NgbRatingConfig) {
+  constructor(config: NgbRatingConfig, private meta: Meta) {
+
+    this.meta.addTags([
+      { name: 'description', content: 'Perfect room for a single person or a couple' },
+      { name: 'keywords', content: 'Twin room, double room', }
+    ]);
+
     config.max = 5;
     config.readonly = true;
   }
