@@ -7,8 +7,11 @@ ngb-rating {
 
 .background {
   height: auto;
+  @media screen and (min-width: 768px) {
+    height: calc(100vh - 250px);
+  }
   @media screen and (min-width: 992px) {
-    height: calc(100vh - 400px);
+    height: calc(100vh - 300px);
   }
   @media screen and (min-width: 1200px) {
     height: calc(100vh - 350px);
@@ -24,14 +27,17 @@ ngb-rating {
 .sub__image-container {
   height: 160px;
   overflow-x: scroll;
-  //@media screen and (min-width: 992px) {
-  //  height: calc(100vh - 700px);
-  //}
+  @media screen and (min-width: 768px) {
+    height: calc(100vh - 500px);
+  }
+  @media screen and (min-width: 992px) {
+    height: calc(100vh - 500px);
+  }
   @media screen and (min-width: 1200px) {
-    height: calc(100vh - 350px);
+    height: calc(100vh - 346px);
   }
   @media screen and (min-width: 1400px) {
-    height: calc(100vh - 300px);
+    height: calc(100vh - 296px);
   }
   //@media screen and (min-width: 1600px) {
   //  height: calc(100vh - 300px);
@@ -41,6 +47,9 @@ ngb-rating {
 .sub-images {
   height: 150px;
   width: auto;
+  @media screen and (min-width: 768px) {
+    height: 200px;
+  }
   @media screen and (min-width: 992px) {
     height: auto;
   }

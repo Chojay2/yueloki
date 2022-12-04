@@ -13,43 +13,20 @@
       <div class="col-12 col-lg-9 mx-auto">
         <div class="w-100 py-20 d-flex flex-column flex-md-row justify-content-between br-b-primary">
           <div>
-            <h2 class="my-10 fw-bold">Double Room</h2>
-            <p>Perfect for a single person or couple.</p>
+            <h2 class="my-10 fw-bold">King Size/Double Room</h2>
+            <p>Designed with thoughtful attention to detail, the king room beds have an ergonomic comfort and
+              includes plenty of room space.</p>
             <div class="d-flex flex-wrap gap-14 align-items-center py-16">
-              <p class="px-16 py-6 bg--grey rounded-xl text-primary" *ngFor="let category of categories">{{category}}</p>
+              <p class="px-16 py-6 bg--grey rounded-xl text-primary" *ngFor="let category of categoryDoubleRoom">{{category}}</p>
             </div>
           </div>
           <div>
-            <h2 class="my-10 fw-bold">From $300/Person</h2>
             <p class="fw-bold text--underline text-primary">10 Reviews</p>
             <p class="rating">(4.5)<ngb-rating [rate]="4"></ngb-rating></p>
           </div>
         </div>
         <div class="col-12 d-flex flex-column flex-xxl-row justify-content-between">
           <div class="col-12 col-xxl-8">
-            <h2 class="my-10 fw-bold">Know more details</h2>
-            <div class="col-12 d-flex gap-20 py-20 text-primary overflow-x-scroll">
-              <div class="text-center rounded-sm border py-18 px-28 py-xl-10 px-xl-16">
-                <fa-icon [icon]="faBed" class="display-30"></fa-icon>
-                <p class="display-20 text-nowrap"></p>
-              </div>
-              <div class="text-center rounded-sm border py-18 px-28 py-xl-10 px-xl-16">
-                <fa-icon [icon]="faHeadset" class="display-30"></fa-icon>
-                <p class="display-20 text-nowrap"></p>
-              </div>
-              <div class="text-center rounded-sm border py-18 px-28 py-xl-10 px-xl-16">
-                <fa-icon [icon]="faDoorOpen" class="display-30"></fa-icon>
-                <p class="display-20 text-nowrap"></p>
-              </div>
-              <div class="text-center rounded-sm border py-18 px-28 py-xl-10 px-xl-16">
-                <fa-icon [icon]="faSquareCheck" class="display-30"></fa-icon>
-                <p class="display-20 text-nowrap"></p>
-              </div>
-              <div class="text-center rounded-sm border py-18 px-28 py-xl-10 px-xl-16">
-                <fa-icon [icon]="faShield" class="display-30"></fa-icon>
-                <p class="display-20 text-nowrap"></p>
-              </div>
-            </div>
             <h2 class="my-10 fw-bold">Room Amenities</h2>
             <div class="col-12 col-lg-9 d-flex flex-column flex-sm-row flex-wrap gap-30 text-primary">
               <div class="col-10 col-sm-5 border py-30 px-28 py-xl-20 px-xl-16 d-flex gap-28 align-items-center justify-content-start rounded-sm">
@@ -73,9 +50,38 @@
               <div class="py-10">
                 <ngb-accordion>
                   <ngb-panel title="About The Room">
-                    <ng-template ngbPanelContent class="">
-                      This is perfect room for a single person or a couple. The room consists of a single
-                      bed and a bathroom and shower combined.
+                    <ng-template ngbPanelContent>
+                      <div class="p-20">
+                        <div>
+                          <h2>Food and Beverage Facilities:</h2>
+                          <ul>
+                            <li>Coffee/ tea making facilities</li>
+                            <li>Kettle</li>
+                            <li>In-room dining (fees apply)</li>
+                            <li>Restaurant and Bar</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h2>Bathroom:</h2>
+                          <ul>
+                            <li>Hair Dryer</li>
+                            <li>Shower Only</li>
+                            <li>Bathroom Kit</li>
+                            <li>Bath Robes available upon request</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h2>In-room facilities:</h2>
+                          <ul>
+                            <li>Work Desk with Lamp</li>
+                            <li>Car Park</li>
+                            <li>WI-Fi</li>
+                            <li>Blackout curtain</li>
+                            <li>Soundproof room</li>
+                            <li>Wake-up calls</li>
+                          </ul>
+                        </div>
+                      </div>
                     </ng-template>
                   </ngb-panel>
                 </ngb-accordion>
@@ -94,7 +100,6 @@
                 </div>
               </div>
               <button class="btn-outline-white col-12 my-20">Book Now</button>
-              <p class="text-center">You will not get charged yet</p>
             </form>
             <div class="border p-20 rounded-sm col-12">
               <h3>Promotional</h3>
@@ -119,42 +124,19 @@
       <div class="w-100 py-20 d-flex flex-column flex-md-row justify-content-between br-b-primary">
         <div>
           <h2 class="my-10 fw-bold">Twin Room</h2>
-          <p>Perfect place for a family visitor searching for a home</p>
+          <p>With generous feather duvets for the perfect night's sleep, the standard guest room is suited for all
+            types of travellers, whether for business or leisure.</p>
           <div class="d-flex flex-wrap gap-14 align-items-center py-16">
             <p class="px-16 py-6 bg--grey rounded-xl text-primary" *ngFor="let category of categories">{{category}}</p>
           </div>
         </div>
         <div>
-          <h2 class="my-10 fw-bold">From $300/Person</h2>
           <p class="fw-bold text--underline text-primary">10 Reviews</p>
           <p class="rating">(4.5)<ngb-rating [rate]="4"></ngb-rating></p>
         </div>
       </div>
       <div class="col-12 d-flex flex-column flex-xxl-row justify-content-between">
         <div class="col-12 col-xxl-8">
-          <h2 class="my-10 fw-bold">Know more details</h2>
-          <div class="col-12 d-flex gap-20 py-20 text-primary overflow-x-scroll">
-            <div class="text-center rounded-sm border py-18 px-28 py-xl-10 px-xl-16">
-              <fa-icon [icon]="faBed" class="display-30"></fa-icon>
-              <p class="display-20 text-nowrap"></p>
-            </div>
-            <div class="text-center rounded-sm border py-18 px-28 py-xl-10 px-xl-16">
-              <fa-icon [icon]="faHeadset" class="display-30"></fa-icon>
-              <p class="display-20 text-nowrap"></p>
-            </div>
-            <div class="text-center rounded-sm border py-18 px-28 py-xl-10 px-xl-16">
-              <fa-icon [icon]="faDoorOpen" class="display-30"></fa-icon>
-              <p class="display-20 text-nowrap"></p>
-            </div>
-            <div class="text-center rounded-sm border py-18 px-28 py-xl-10 px-xl-16">
-              <fa-icon [icon]="faSquareCheck" class="display-30"></fa-icon>
-              <p class="display-20 text-nowrap"></p>
-            </div>
-            <div class="text-center rounded-sm border py-18 px-28 py-xl-10 px-xl-16">
-              <fa-icon [icon]="faShield" class="display-30"></fa-icon>
-              <p class="display-20 text-nowrap"></p>
-            </div>
-          </div>
           <h2 class="my-10 fw-bold">Room Amenities</h2>
           <div class="col-12 col-lg-9 d-flex flex-column flex-sm-row flex-wrap gap-30 text-primary">
             <div class="col-10 col-sm-5 border py-30 px-28 py-xl-20 px-xl-16 d-flex gap-28 align-items-center justify-content-start rounded-sm">
@@ -178,9 +160,38 @@
             <div class="py-10">
               <ngb-accordion>
                 <ngb-panel title="About The Room">
-                  <ng-template ngbPanelContent class="">
-                    perfect place for a family visitor searching for a home perfect place for a
-                    family visitor searching for a home
+                  <ng-template ngbPanelContent>
+                    <div class="p-20">
+                      <div>
+                        <h2>Food and Beverage Facilities:</h2>
+                        <ul>
+                          <li>Coffee/ tea making facilities</li>
+                          <li>Kettle</li>
+                          <li>In-room dining (fees apply)</li>
+                          <li>Restaurant and Bar</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h2>Bathroom:</h2>
+                        <ul>
+                          <li>Hair Dryer</li>
+                          <li>Shower Only</li>
+                          <li>Bathroom Kit</li>
+                          <li>Bath Robes available upon request</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h2>In-room facilities:</h2>
+                        <ul>
+                          <li>Work Desk with Lamp</li>
+                          <li>Car Park</li>
+                          <li>WI-Fi</li>
+                          <li>Blackout curtain</li>
+                          <li>Soundproof room</li>
+                          <li>Wake-up calls</li>
+                        </ul>
+                      </div>
+                    </div>
                   </ng-template>
                 </ngb-panel>
               </ngb-accordion>
@@ -199,7 +210,6 @@
               </div>
             </div>
             <button class="btn-outline-white col-12 my-20">Book Now</button>
-            <p class="text-center">You will not get charged yet</p>
           </form>
           <div class="border p-20 rounded-sm col-12">
             <h3>Promotional</h3>

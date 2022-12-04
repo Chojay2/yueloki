@@ -30,29 +30,8 @@ export class HotelDetailComponent implements OnInit {
     config.max = 5;
     config.readonly = true;
   }
+  categoryDoubleRoom = ['Couple', 'Single person'];
   categories = ['Family', 'Culture', 'Kids'];
-  // details = [
-  //   {
-  //     icon: "<fa-icon [icon]=\"faBed\"></fa-icon>",
-  //     info: "5 beds"
-  //   },
-  //   {
-  //     icon: "faHeadset",
-  //     info: "5 beds"
-  //   },
-  //   {
-  //     icon: "faDoorOpen",
-  //     info: "5 beds"
-  //   },
-  //   {
-  //     icon: "faSquareCheck",
-  //     info: "5 beds"
-  //   },
-  //   {
-  //     icon: "faShield",
-  //     info: "5 beds"
-  //   }
-  // ];
 
   ngOnInit(): void {
   }
