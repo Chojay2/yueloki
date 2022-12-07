@@ -1,10 +1,9 @@
 .offcanvas_contact {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   z-index: 999;
-  overflow: hidden;
 }
 
 .contact {
@@ -17,7 +16,7 @@
   z-index: 9999;
   @media (min-width: 576px) {
     width: 500px;
-    height: calc(100vh - 50px);
+    //height: calc(100vh - 50px);
     border-radius: 10px;
     top: 30px !important;
   }
