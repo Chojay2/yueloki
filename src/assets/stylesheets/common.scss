@@ -1,10 +1,10 @@
 .title {
-  font-size: 36px;
+  font-size: 36px !important;
   @media (min-width: 576px) {
-    font-size: 46px;
+    font-size: 46px !important;
   }
   @media (min-width: 992px) {
-    font-size: 56px;
+    font-size: 56px !important;
   }
 }
 

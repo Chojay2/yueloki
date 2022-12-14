@@ -115,15 +115,6 @@
   }
 }
 
-.radius--b-30 {
-  border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 30px;
-  @media (max-width: 576px) {
-    border-bottom-right-radius: 16px;
-    border-bottom-left-radius: 16px;
-  }
-}
-
 .btn {
   padding: 8px 20px !important;
   border-radius: 4px !important;
