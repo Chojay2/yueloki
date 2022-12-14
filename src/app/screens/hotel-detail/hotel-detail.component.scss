@@ -1,4 +1,8 @@
-//@import "../../../assets/stylesheets/breakpoint.tsx";
+.hero__section {
+  background: url("../../../assets/images/rooms.jpg") rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
 
 ngb-rating {
   font-size: 24px;
@@ -7,50 +11,26 @@ ngb-rating {
 
 .background {
   height: auto;
-  @media screen and (min-width: 768px) {
-    height: calc(100vh - 250px);
-  }
-  @media screen and (min-width: 992px) {
-    height: calc(100vh - 300px);
+  @media screen and (min-width: 1100px) {
+    height: calc(100vh - 200px);
   }
   @media screen and (min-width: 1200px) {
-    height: calc(100vh - 350px);
+    height: calc(100vh - 180px);
   }
-  @media screen and (min-width: 1400px) {
-    height: calc(100vh - 250px);
-  }
-  //@media screen and (min-width: 1600px) {
-  //  height: calc(100vh - 200px);
-  //}
 }
 
 .sub__image-container {
-  height: 160px;
-  overflow-x: scroll;
-  @media screen and (min-width: 768px) {
-    height: calc(100vh - 500px);
+  height: 140px;
+  @media screen and (min-width: 576px) {
+    height: 160px;
   }
-  @media screen and (min-width: 992px) {
-    height: calc(100vh - 500px);
-  }
-  @media screen and (min-width: 1200px) {
-    height: calc(100vh - 346px);
-  }
-  @media screen and (min-width: 1400px) {
-    height: calc(100vh - 246px);
-  }
-  //@media screen and (min-width: 1600px) {
-  //  height: calc(100vh - 300px);
-  //}
-}
-
-.sub-images {
-  height: 150px;
-  width: auto;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 830px) {
     height: 200px;
   }
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 1200px) {
+    height: calc(100vh - 180px);
+  }
+  .sub-images {
     height: auto;
   }
 }

@@ -23,8 +23,8 @@ export class HotelDetailComponent implements OnInit {
   constructor(config: NgbRatingConfig, private meta: Meta) {
 
     this.meta.addTags([
-      { name: 'description', content: 'Perfect room for a single person or a couple' },
-      { name: 'keywords', content: 'Twin room, double room', }
+      { name: 'description', content: 'Pure Bhutanese authentic rooms' },
+      { name: 'keywords', content: 'YueLoKi, phobjikha, yueloki, hotelyueloki, hotelwangdue, tophotel, wangduephodrang, gangtey', }
     ]);
 
     config.max = 5;

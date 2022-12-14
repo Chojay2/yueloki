@@ -16,8 +16,11 @@
       width: 100px;
     }
   }
-  &__links:hover {
-    transform: scale(1.08);
+  &__links {
+    transition: 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.08);
+    }
   }
   .quick-links li {
     list-style: none;

@@ -105,7 +105,7 @@
     border-right: 1px solid rgba($black, 0.6);
   }
   &-b-grey {
-    border-bottom: 1px solid rgba($black, 0.6);
+    border-bottom: 1px solid rgba($black, 0.2);
   }
   &-primary-12 {
     border: 12px solid $primary;
@@ -115,11 +115,20 @@
   }
 }
 
+.radius--b-30 {
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  @media (max-width: 576px) {
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+  }
+}
+
 .btn {
   padding: 8px 20px !important;
-  border-radius: 8px !important;
+  border-radius: 4px !important;
   font-size: 16px !important;
-  transition: 0.2s ease-in !important;
+  transition: 0.4s ease-in-out !important;
   @media (min-width: 576px) {
     padding: 10px 40px !important;
   }

@@ -14,8 +14,8 @@ export class AboutUsDetailComponent implements OnInit {
 
   constructor(private meta: Meta) {
     this.meta.addTags([
-      { name: 'description', content: 'One of the best hotels in phobjikha.' },
-      { name: 'keywords', content: 'about yue lo ki, history of yue lo ki, yueloki location, hotel yueloki, wangdue phodrang' }
+      { name: 'description', content: 'Hotel Yue Lo Ki was established in 2010 as a small guest house with six rooms and five staff.' },
+      { name: 'keywords', content: 'YueLoKi, phobjikha, yueloki, hotelyueloki, hotelwangdue, tophotel, wangduephodrang, gangtey' }
     ]);
   }
 

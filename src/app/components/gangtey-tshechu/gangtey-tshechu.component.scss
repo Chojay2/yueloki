@@ -1,8 +1,8 @@
 @import "../../../assets/stylesheets/variables";
 
 .gangtey-tshechu {
-  background: url("../../../assets/images/gangtey_tshechu_bg.jpg"), rgba(0, 0, 0, 0.6);
+  background: url("../../../assets/images/gangtey_tshechu_bg.jpg");
   background-size: cover;
   background-blend-mode: multiply;
-  background-color: rgba($black, 0.8);
+  background-color: rgba($black, 0.5);
 }

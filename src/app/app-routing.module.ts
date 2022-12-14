@@ -9,6 +9,7 @@ import {
   BlackNeckedCraneFestivalComponent
 } from "./components/black-necked-crane-festival/black-necked-crane-festival.component";
 import { GangteyTshechuComponent } from "./components/gangtey-tshechu/gangtey-tshechu.component";
+import { FacilityComponent } from "./screens/facility/facility.component";
 
 const routes: Routes = [
   {path: 'about-us', component: AboutUsDetailComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'experiences', component: ExperiencesComponent},
   {path: 'black-necked-crane-festival', component: BlackNeckedCraneFestivalComponent},
   {path: 'gangtey-tshechu', component: GangteyTshechuComponent},
+  {path: 'facilities', component: FacilityComponent},
   {path: '**', redirectTo: 'home'},
 ];
 
