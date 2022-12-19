@@ -1,0 +1,114 @@
+<div class="w-100 py-20 py-md-40">
+  <div class="col-12 col-lg-10 mx-auto p-20 px-md-40 d-flex flex-column flex-md-row justify-content-between">
+    <div>
+      <h2 class="mb-10 fw-bold">King Size/Double Room</h2>
+      <p>Designed with thoughtful attention to detail, the king room beds have an ergonomic comfort and
+        includes plenty of room space.</p>
+      <div class="d-flex flex-wrap gap-14 align-items-center py-16">
+        <p class="px-16 py-6 bg--grey rounded-xl text-dark" *ngFor="let category of categoryDoubleRoom">{{category}}</p>
+      </div>
+    </div>
+    <div>
+      <p class="fw-bold text--underline text-primary">10 Reviews</p>
+      <p class="rating">(4.5)<ngb-rating [rate]="4"></ngb-rating></p>
+    </div>
+  </div>
+  <div class="col-12 col-lg-11 d-flex flex-column flex-xl-row mx-auto px-20 px-md-48 gap-10 justify-content-center py-10">
+    <div class="col-12 col-xl-8">
+      <img src="https://asmpa.selise.cloud/1671194876_bd71f01a8bd11dfc70a5d4e5686baf_bed_room_1.jpeg" class="background rounded" alt="room" width="100%" data-aos="fade-in" data-aos-delay="100" data-aos-once="true">
+    </div>
+    <div class="col-12 col-xl-3 d-flex flex-row flex-xl-column justify-content-start gap-10 overflow-x-scroll sub__image-container rounded">
+      <img src="https://asmpa.selise.cloud/1671194878_7570b0dbe1424b57bc96ab46e04ce2_bed_room_2.jpeg" class="sub-images rounded" alt="room" width="100%" data-aos="fade-in" data-aos-delay="150" data-aos-once="true">
+      <img src="https://asmpa.selise.cloud/1671194874_bf9dceea64470a881cf7dab05a7787_bathroom.jpeg" class="sub-images rounded" alt="room" width="100%" data-aos="fade-in" data-aos-delay="200" data-aos-once="true">
+      <img src="https://asmpa.selise.cloud/1671194941_f737243a77d899c34db41c5a0f5bfa_shower.jpeg" class="sub-images rounded" alt="room" width="100%" data-aos="fade-in" data-aos-delay="150" data-aos-once="true">
+      <img src="https://asmpa.selise.cloud/1671194875_7014257df8752be6408167aed27eca_bed__room_3.jpeg" class="sub-images rounded" alt="room" width="100%" data-aos="fade-in" data-aos-delay="150" data-aos-once="true">
+      <img src="https://asmpa.selise.cloud/1671194899_1df0f90f58b1266144c2ee03588399_dining.jpeg" class="sub-images rounded" alt="room" width="100%" data-aos="fade-in" data-aos-delay="150" data-aos-once="true">
+    </div>
+  </div>
+  <div class="col-12 px-20 px-md-40 mt-20 mb-20 mb-lg-50 d-flex justify-content-between">
+    <div class="col-12 col-lg-10 mx-auto">
+      <div class="col-12 d-flex flex-column flex-xxl-row justify-content-between">
+        <div class="col-12 col-xxl-8">
+          <h2 class="my-10 fw-bold">Room Amenities</h2>
+          <div class="col-12 col-lg-9 d-flex flex-column flex-sm-row flex-wrap gap-30 text-dark">
+            <div class="col-10 col-sm-5 border py-30 px-28 py-xl-20 px-xl-16 d-flex gap-28 align-items-center justify-content-start rounded-sm">
+              <fa-icon [icon]="faWifi" class="display-30"></fa-icon>
+              <p class="display-16">Free Wifi service</p>
+            </div>
+            <div class="col-10 col-sm-5 border py-30 px-28 py-xl-20 px-xl-16 d-flex gap-28 align-items-center justify-content-start rounded-sm">
+              <fa-icon [icon]="faToiletPortable" class="display-30"></fa-icon>
+              <p class="display-16">Complimentary Toiletries</p>
+            </div>
+            <div class="col-10 col-sm-5 border py-30 px-28 py-xl-20 px-xl-16 d-flex gap-28 align-items-center justify-content-start rounded-sm">
+              <fa-icon [icon]="faBowlFood" class="display-30"></fa-icon>
+              <p class="display-16">Healthy Food</p>
+            </div>
+            <div class="col-10 col-sm-5 border py-30 px-28 py-xl-20 px-xl-16 d-flex gap-28 align-items-center justify-content-start rounded-sm">
+              <fa-icon [icon]="faTv" class="display-30"></fa-icon>
+              <p class="display-16">Free Television</p>
+            </div>
+          </div>
+          <div class="py-20 col-12 col-lg-8">
+            <div class="py-10">
+              <ngb-accordion>
+                <ngb-panel title="About The Room">
+                  <ng-template ngbPanelContent>
+                    <div class="p-20">
+                      <div>
+                        <h2>Food and Beverage Facilities:</h2>
+                        <ul>
+                          <li>Coffee/ tea making facilities</li>
+                          <li>Kettle</li>
+                          <li>In-room dining (fees apply)</li>
+                          <li>Restaurant and Bar</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h2>Bathroom:</h2>
+                        <ul>
+                          <li>Hair Dryer</li>
+                          <li>Shower Only</li>
+                          <li>Bathroom Kit</li>
+                          <li>Bath Robes available upon request</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h2>In-room facilities:</h2>
+                        <ul>
+                          <li>Work Desk with Lamp</li>
+                          <li>Car Park</li>
+                          <li>WI-Fi</li>
+                          <li>Blackout curtain</li>
+                          <li>Soundproof room</li>
+                          <li>Wake-up calls</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </ng-template>
+                </ngb-panel>
+              </ngb-accordion>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xxl-4 d-flex flex-column gap-20">
+          <form action="https://formspree.io/f/xbjergbz" method="POST" class="col-12 p-20 rounded-sm my-20 form__container border bg-dark text-white">
+            <h3 class="text-white">Book This Room For Your Stay</h3>
+            <div class="d-flex flex-column gap-16 py-20 br-b-white">
+              <input type="text" name="name" placeholder="Name" class="border" required>
+              <input type="email" name="email" placeholder="Email" class="border" required>
+              <div class="d-flex gap-16 col-12">
+                <input type="number" name="no_of_people" placeholder="No. of People" class="w-50 border" required>
+                <input type="number" name="total_nights" placeholder="Nights" class="w-50 border" required>
+              </div>
+            </div>
+            <button  type="submit" class="btn-outline-white col-12 my-20">Book Now</button>
+          </form>
+          <div class="br-primary p-20 rounded-sm col-12">
+            <h3>Promotional</h3>
+            <p>With only an additional $12 per night you can enjoy a view with a balcony</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

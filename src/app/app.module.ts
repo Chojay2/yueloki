@@ -16,13 +16,14 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { TestomonialCarouselComponent } from './components/testomonial-carousel/testomonial-carousel.component';
 import { EventsComponent } from './components/events/events.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
-import { ServicesComponent } from './components/services/services.component';
 import { AboutUsDetailComponent } from './screens/about-us-detail/about-us-detail.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BlackNeckedCraneFestivalComponent } from './components/black-necked-crane-festival/black-necked-crane-festival.component';
 import { ExperiencesComponent } from './components/experiences/experiences.component';
 import { GangteyTshechuComponent } from './components/gangtey-tshechu/gangtey-tshechu.component';
 import { FacilityComponent } from './screens/facility/facility.component';
+import { KingSizeRoomComponent } from './screens/king-size-room/king-size-room.component';
+import { TwinRoomComponent } from './screens/twin-room/twin-room.component';
 
 @NgModule({
   declarations: [
@@ -35,13 +36,14 @@ import { FacilityComponent } from './screens/facility/facility.component';
     TestomonialCarouselComponent,
     EventsComponent,
     ContactUsComponent,
-    ServicesComponent,
     AboutUsDetailComponent,
     FooterComponent,
     BlackNeckedCraneFestivalComponent,
     ExperiencesComponent,
     GangteyTshechuComponent,
-    FacilityComponent
+    FacilityComponent,
+    KingSizeRoomComponent,
+    TwinRoomComponent
   ],
   imports: [
     BrowserModule,
