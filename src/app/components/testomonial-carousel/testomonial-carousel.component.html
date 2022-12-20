@@ -7,12 +7,10 @@
     <img src="./assets/images/corner_decor_black.svg" alt="" class="corner-decor position-absolute">
     <img src="./assets/images/corner_decor_black.svg" alt="" class="right-decor corner-decor position-absolute">
   </div>
-  <div class="carousel bg-dark px-20 px-md-40 py-74">
+  <div class="carousel bg-dark px-20 py-74">
     <ngb-carousel
       #carousel
       [interval]="3000"
-      [pauseOnHover]="pauseOnHover"
-      [pauseOnFocus]="pauseOnFocus"
       (slide)="onSlide($event)"
     >
       <ng-template ngbSlide>

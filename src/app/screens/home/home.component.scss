@@ -1,5 +1,13 @@
 @import "../../../assets/stylesheets/variables.scss";
 
+:host ::ng-deep .carousel-indicators [data-bs-target] {
+  display: none !important;
+}
+
+:host ::ng-deep .carousel-control-next, .carousel-control-prev {
+  display: none !important;
+}
+
 .home {
   .short-description {
     background-color: $dark;
@@ -9,10 +17,10 @@
     &__title {
       font-size: 30px;
       @media (min-width: 576px) {
-        font-size: 56px;
+        font-size: 46px;
       }
       @media (min-width: 992px) {
-        font-size: 60px;
+        font-size: 54px;
       }
     }
     .sub-header {

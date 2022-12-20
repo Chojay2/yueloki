@@ -17,7 +17,49 @@
     </div>
   </div>
   <div class="w-100">
-    <img src="https://asmpa.selise.cloud/1671194907_69baee8e85594d50cbcdf250ebb1bf_facility_bg.jpeg" alt="yueloki" width="100%">
+    <ngb-carousel
+      #carousel
+      [interval]="2500"
+      [pauseOnHover]="pauseOnHover"
+      [pauseOnFocus]="pauseOnFocus"
+      (slide)="onSlide($event)"
+    >
+      <ng-template ngbSlide>
+        <div class="w-100">
+          <img src="https://asmpa.selise.cloud/1671194907_69baee8e85594d50cbcdf250ebb1bf_facility_bg.jpeg" alt="yueloki" width="100%">
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="w-100">
+          <img src="https://asmpa.selise.cloud/1671432495_7b18a31f49b1e5e00a4e5137d52b13_y3-min.jpeg" alt="yueloki" width="100%">
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="w-100">
+          <img src="https://asmpa.selise.cloud/1671432495_9907eec9d6237d31e9a7e539c23faf_y5-min.jpeg" alt="yueloki" width="100%">
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="w-100">
+          <img src="https://asmpa.selise.cloud/1671432496_33e595256f4b4ca577b07fe65e15a6_y6-min.jpeg" alt="yueloki" width="100%">
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="w-100">
+          <img src="https://asmpa.selise.cloud/1671432498_29ee714a6e0a0d38fa9aefec786c11_y7-min.jpeg" alt="yueloki" width="100%">
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="w-100">
+          <img src="https://asmpa.selise.cloud/1671432495_ace419af50ed67fe0f5838baedcb03_y4-min.jpeg" alt="yueloki" width="100%">
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="w-100">
+          <img src="https://asmpa.selise.cloud/1671432500_af0024f5bb871f1710e1d6f7765b2a_y8-min.jpeg" alt="yueloki" width="100%">
+        </div>
+      </ng-template>
+    </ngb-carousel>
   </div>
   <div class="short-description w-100  box-shadow--primary">
     <p class="col-12 col-md-6 col-xl-5 px-20 py-30 text-center mx-auto text-white fw-lighter" data-aos="slide-up" data-aos-delay="400" data-aos-once="true">
@@ -47,7 +89,7 @@
       <fa-icon [icon]="faArrowRightLong"></fa-icon>
     </button>
   </div>
-  <div class="col-12 col-lg-10 mx-auto testimonial-container my-20 my-md-50 py-20 py-md-50">
+  <div class="col-12 col-lg-10 mx-auto testimonial-container my-20 my-md-50 p-20 px-md-24 py-md-50">
     <app-testomonial-carousel></app-testomonial-carousel>
   </div>
   <div class="col-12 col-sm-10 col-lg-8 mx-auto d-flex flex-column gap-30 my-20 my-lg-60 px-20">
@@ -65,7 +107,7 @@
         <ng-template ngbPanelContent>
           In general one extra bed for one child is available at a minor additional charge.
           However, please note that this possibility depends on each hotel’s policy and availability.
-          We advise you to check the overview page of the hotel, or to send an email to test@gmail.com.
+          We advise you to check the overview page of the hotel, or to send an email to yuelokigangtey@gmail.com.
         </ng-template>
       </ngb-panel>
     </ngb-accordion>
@@ -75,7 +117,7 @@
           It will depend on each hotel’s policy and availability. Once you have retrieved the availability
           for a specific hotel for the requested dates, by clicking on the room name, you will access the
           room description. If the possibility and the costs of an extra bed in the room are not specified in the room
-          description, please send an e-mail to test@gmail.com.
+          description, please send an e-mail to yuelokigangtey@gmail.com.
         </ng-template>
       </ngb-panel>
     </ngb-accordion>
