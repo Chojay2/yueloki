@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { Meta } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 import { NgbCarousel, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/ng-bootstrap';
 import { faAngleRight, faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 
@@ -43,14 +43,14 @@ export class HomeComponent implements OnInit {
   }
 
 
-  constructor(private meta: Meta) {
+  constructor(private meta: Meta, private title: Title) {}
+
+  ngOnInit(): void {
+    this.title.setTitle('Yueloki Wangduephodrang');
     this.meta.addTags([
       { name: 'description', content: 'Hotel Yue Lo Ki is located only a few minutes from the incredible Phobjikha valley' },
       { name: 'keywords', content: 'YueLoKi, phobjikha, yueloki, hotelyueloki, hotelwangdue, tophotel, wangduephodrang, gangtey' }
     ]);
-  }
-
-  ngOnInit(): void {
   }
 
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Meta } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-experiences',
@@ -8,14 +8,13 @@ import { Meta } from '@angular/platform-browser';
 })
 export class ExperiencesComponent implements OnInit {
 
-  constructor(private meta: Meta) {
-    this.meta.addTags([
-      { name: 'description', content: 'Our experience and and some of the services at yueloki include, picnic and hoisting prayer flags, mountain biking, nature trekking and morning and evening prayers' },
-      { name: 'keywords', content: 'YueLoKi, phobjikha, yueloki, hotelyueloki, hotelwangdue, tophotel, wangduephodrang, gangtey' }
-    ]);
-  }
+  constructor(private meta: Meta, private title: Title) {}
 
   ngOnInit(): void {
+    this.title.setTitle('Yueloki Wangduephodrang - Our Experiences')
+    this.meta.updateTag(
+      { name: 'description', content: 'Our experience and and some of the services at yueloki include, picnic and hoisting prayer flags, mountain biking, nature trekking and morning and evening prayers' }
+    );
   }
 
 }

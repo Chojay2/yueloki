@@ -7,7 +7,7 @@ import * as AOS from 'aos';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'yueloki';
+  title = 'universal';
 
   ngOnInit() {
     AOS.init({

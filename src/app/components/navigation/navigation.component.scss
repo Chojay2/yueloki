@@ -1,6 +1,19 @@
 .navbar-logo {
+  width: 40px;
+  height: 40px;
   @media (min-width: 576px) {
-    width: 54px;
+    width: 70px;
+    height: 70px;
+  }
+}
+.navbar-logo-hand {
+  width: 30px;
+  height: 30px;
+  left: 4px;
+  @media (min-width: 576px) {
+    width: 52px;
+    height: 52px;
+    left: 8px;
   }
 }
 

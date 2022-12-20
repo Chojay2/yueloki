@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Meta } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 import { faBullseye, faEye, faGem } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
@@ -12,14 +12,13 @@ export class AboutUsDetailComponent implements OnInit {
   faEye = faEye;
   faGem = faGem;
 
-  constructor(private meta: Meta) {
-    this.meta.addTags([
-      { name: 'description', content: 'Hotel Yue Lo Ki was established in 2010 as a small guest house with six rooms and five staff.' },
-      { name: 'keywords', content: 'YueLoKi, phobjikha, yueloki, hotelyueloki, hotelwangdue, tophotel, wangduephodrang, gangtey' }
-    ]);
-  }
+  constructor(private meta: Meta, private title: Title) {}
 
   ngOnInit(): void {
+    this.title.setTitle('Yueloki Wangduephodrang - About us');
+    this.meta.updateTag(
+      { name: 'description', content: 'Hotel Yue Lo Ki was established in 2010 as a small guest house with six rooms and five staff.' }
+    );
   }
 
 }

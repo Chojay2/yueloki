@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faBed, faHeadset, faDoorOpen, faSquareCheck, faShield, faWifi, faToiletPortable, faTv, faBowlFood } from '@fortawesome/free-solid-svg-icons';
 import { NgbRatingConfig } from "@ng-bootstrap/ng-bootstrap";
-import { Meta } from "@angular/platform-browser";
+import { Meta, Title } from "@angular/platform-browser";
 
 @Component({
   selector: 'app-twin-room',
@@ -19,12 +19,7 @@ export class TwinRoomComponent implements OnInit {
   faTv = faTv;
   faBowlFood = faBowlFood;
 
-  constructor(config: NgbRatingConfig, private meta: Meta) {
-
-    this.meta.addTags([
-      { name: 'description', content: 'Pure Bhutanese authentic rooms' },
-      { name: 'keywords', content: 'YueLoKi, phobjikha, yueloki, hotelyueloki, hotelwangdue, tophotel, wangduephodrang, gangtey', }
-    ]);
+  constructor(config: NgbRatingConfig, private meta: Meta, private title: Title) {
 
     config.max = 5;
     config.readonly = true;
@@ -33,6 +28,10 @@ export class TwinRoomComponent implements OnInit {
   categories = ['Family', 'Culture', 'Kids'];
 
   ngOnInit(): void {
+    this.title.setTitle('Yueloi Wangduephodrang - Twin Room')
+    this.meta.updateTag(
+      { name: 'description', content: 'Pure Bhutanese authentic Twin rooms with two beds for families or friends' }
+    );
   }
 
 }
