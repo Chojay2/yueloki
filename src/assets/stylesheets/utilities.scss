@@ -98,6 +98,9 @@
   &-b-white {
     border-bottom: 1px solid $white;
   }
+  &-b-white-80 {
+    border-bottom: 1px solid rgba($white, 0.8);
+  }
   &-primary {
     border: 1px solid $primary;
   }

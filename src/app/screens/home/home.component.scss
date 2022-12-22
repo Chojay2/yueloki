@@ -4,8 +4,18 @@
   display: none !important;
 }
 
-:host ::ng-deep .carousel-control-next, .carousel-control-prev {
+:host ::ng-deep .carousel-control-next, :host ::ng-deep .carousel-control-prev {
   display: none !important;
+}
+
+.room__section {
+  background: url("https://asmpa.selise.cloud/1671194878_7570b0dbe1424b57bc96ab46e04ce2_bed_room_2.jpeg") rgba(0, 0, 0, 0.4);
+  background-size: cover;
+  height: calc(100vh - 300px);
+  background-blend-mode: multiply;
+  @media (min-width: 992px) {
+    height: calc(100vh - 150px);
+  }
 }
 
 .home {
